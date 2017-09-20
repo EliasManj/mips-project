@@ -22,15 +22,18 @@ rom[10] = 32'hAC230000;//SW $3, 0($1)
 rom [11] = 32'h0800000B;//JMP11
 ```
 
-Insert preloaded data memory at bufferini.list
+Insert preloaded data memory at ganram.v
 
 Example:
 ```
-00256322
-03E416B3
-0614C433
-0CCB159E
-0CAA3F89
-000563F2
-03ADFF5D
+initial ram[0] = 32'h00022000;
+initial ram[1] = 32'h0BBBBBBB;
+initial ram[2] = 32'h00aa0000;
+initial ram[3] = 32'h0AAAAAAA;
+initial ram[4] = 32'h00aaa000;
+initial ram[5] = 32'h00aaa000;
+initial ram[6] = 32'h00000001;
+initial ram[7] = 32'h0eee0000;
+initial ram[8] = 32'h00f00000;
+initial ram[9] = 32'h00f00000;
 ```
