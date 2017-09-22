@@ -64,6 +64,6 @@ reg_file regFile(.clk(clk), .rd_addr1(inst25_21), .rd_addr2(inst20_16), .wr_addr
 //alu
 alu myAlu(.a(rd_data1), .b(aluB), .ctrlInput(aluOp), .zero(zero), .aluResult(aluResult));
 //ram
-genram genRam(.clk(clk), .addr(aluResult[3:0]), .rw(rw), .data_in(rd_data2), .data_out(data_out));
+genram2 genRam(.clk(clk), .addr(aluResult[3:0]), .rw(rw), .data_in(rd_data2), .data_out(data_out));
 
 endmodule
