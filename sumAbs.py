@@ -8,7 +8,8 @@ with open("codigos.txt","r") as f:
     l0 = numCodes[0:int((len(numCodes)-1)/2)]
     l1 = numCodes[int(((len(numCodes)-1)/2)+1):-1]
     differences = [ abs(x - y) for x, y in zip(l0,l1)]
-    print(list(zip(l0,l1)))
     numDiff = list(map(lambda x: int(x), differences))
+    summ = 0
+    for x in range(0,len(differences)):
+        summ += numDiff[x]
     print(sum(numDiff))
-    print('0x%08X' % sum(numDiff))
