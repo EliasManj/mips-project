@@ -1,3 +1,4 @@
 incremental_db
+-multiInts
 db/*
 output_files/*
